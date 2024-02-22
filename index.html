@@ -11,9 +11,27 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs='sourceType: webcam;'>
       <a-marker preset="hiro">
-        <!-- Incorporando uma imagem -->
-        <a-image src="logo_blue.png" position="0 0 0" rotation="-90 0 0" scale="1 1 1"></a-image>
+        <!-- Imagem com animações -->
+        <a-image src="caminho_para_sua_imagem.jpg" position="0 0 0" rotation="-90 0 0" scale="1 1 1">
+          
+          <!-- Animação de rotação -->
+          <a-animation attribute="rotation"
+                       dur="10000"
+                       fill="forwards"
+                       to="0 360 0"
+                       repeat="indefinite"></a-animation>
+          
+          <!-- Animação de escala -->
+          <a-animation attribute="scale"
+                       dur="5000"
+                       direction="alternate"
+                       fill="forwards"
+                       from="1 1 1"
+                       to="2 2 2"
+                       repeat="indefinite"></a-animation>
+        </a-image>
       </a-marker>
       <a-entity camera></a-entity>
+    </a-scene>  
   </body>
 </html>
