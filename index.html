@@ -9,15 +9,13 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   </head>
   <body style="margin : 0px; overflow: hidden;">
-    <h1> BR@IN - Brazil - India AI Solutions AirBot </h1>
-    <div>
-    <a-scene embedded arjs='sourceType: webcam;'>
-      <a-marker preset="hiro">
-        <a-image src="logo_blue.gif" position="0 0 0" rotation="-90 0 0" scale="1 1 1">
-     
-      </a-marker>
-      <a-entity camera></a-entity>
-    </a-scene>  
-  </div>
+<a-scene embedded arjs='sourceType: webcam;'>
+  <a-marker preset="hiro">
+    <!-- Incorporando uma imagem -->
+    <a-image src="logo_blue.gif" position="0 0 0" rotation="-90 0 0" scale="1 1 1"></a-image>
+  </a-marker>
+  <a-entity camera></a-entity>
+</a-scene>
+
   </body>
 </html>
